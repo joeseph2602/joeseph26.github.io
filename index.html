@@ -9,22 +9,34 @@
 <body>
 
   <header class="hero">
-    <h1>Joeseph Rosas</h1>
-    <p>Computer Science Student | Aspiring Software Developer | Data Science Learner</p>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
+    <nav class="navbar">
+      <h2 class="logo">JR</h2>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
+
+    <div class="hero-content">
+      <p class="tag">Computer Science Student • Data Science Learner</p>
+      <h1>Hi, I'm Joeseph Rosas.</h1>
+      <p class="hero-text">
+        I’m building my skills in software development, databases, data analysis,
+        and problem solving.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="button primary" href="#projects">View Projects</a>
+        <a class="button secondary" href="resume.docx" target="_blank">View Resume</a>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" class="section">
       <h2>About Me</h2>
       <p>
         I am a Computer Science student at Del Mar College pursuing an Associate of
@@ -34,44 +46,50 @@
       <p>
         I also have four years of full-time work experience in a fast-paced restaurant
         environment, where I developed leadership, teamwork, time management, and
-        problem-solving skills.
+        adaptability.
       </p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section">
       <h2>Technical Skills</h2>
 
-      <h3>Programming & Web</h3>
-      <div class="skills">
-        <span>Python</span>
-        <span>Java</span>
-        <span>JavaScript</span>
-        <span>HTML</span>
-        <span>CSS</span>
+      <div class="skill-group">
+        <h3>Programming & Web</h3>
+        <div class="skills">
+          <span>Python</span>
+          <span>Java</span>
+          <span>JavaScript</span>
+          <span>HTML</span>
+          <span>CSS</span>
+        </div>
       </div>
 
-      <h3>Databases & Data</h3>
-      <div class="skills">
-        <span>SQL</span>
-        <span>MySQL</span>
-        <span>SQL Server</span>
-        <span>Data Cleaning</span>
-        <span>Basic Analysis</span>
-        <span>Excel</span>
+      <div class="skill-group">
+        <h3>Databases & Data</h3>
+        <div class="skills">
+          <span>SQL</span>
+          <span>MySQL</span>
+          <span>SQL Server</span>
+          <span>Excel</span>
+          <span>Data Cleaning</span>
+          <span>Basic Analysis</span>
+        </div>
       </div>
 
-      <h3>Tools & Other Knowledge</h3>
-      <div class="skills">
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>VS Code</span>
-        <span>Problem Debugging</span>
-        <span>Networking Fundamentals</span>
-        <span>GIS Concepts</span>
+      <div class="skill-group">
+        <h3>Tools & Knowledge</h3>
+        <div class="skills">
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>VS Code</span>
+          <span>Problem Debugging</span>
+          <span>Networking Fundamentals</span>
+          <span>GIS Concepts</span>
+        </div>
       </div>
     </section>
 
-    <section id="education">
+    <section id="education" class="section">
       <h2>Education</h2>
       <div class="card">
         <h3>Associate of Science in Computer Science</h3>
@@ -81,7 +99,31 @@
       </div>
     </section>
 
-    <section id="experience">
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="project-grid">
+        <div class="card project-card">
+          <h3>PawPal+</h3>
+          <p>A pet care scheduling app built with Python and Streamlit.</p>
+          <p class="tech">Python • Streamlit • Scheduling Logic</p>
+        </div>
+
+        <div class="card project-card">
+          <h3>Number Guessing Game</h3>
+          <p>A Python Streamlit game with difficulty levels and score tracking.</p>
+          <p class="tech">Python • Streamlit • Game Logic</p>
+        </div>
+
+        <div class="card project-card">
+          <h3>Airbnb Pricing Analysis</h3>
+          <p>A data analysis project focused on rental prices, variables, and data cleaning.</p>
+          <p class="tech">Excel • Data Cleaning • Analysis</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
       <h2>Professional Experience</h2>
       <div class="card">
         <h3>Full-Time Cook</h3>
@@ -96,36 +138,13 @@
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>PawPal+</h3>
-          <p>A pet care scheduling app built with Python and Streamlit.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Number Guessing Game</h3>
-          <p>A Python Streamlit game with difficulty levels and score tracking.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Airbnb Pricing Analysis</h3>
-          <p>A data analysis project focused on rental prices, variables, and data cleaning.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="resume">
+    <section id="resume" class="section resume-box">
       <h2>Resume</h2>
-      <p>
-        View or download my resume below.
-      </p>
-      <a class="button" href="resume.docx" target="_blank">View Resume</a>
+      <p>View or download my resume below.</p>
+      <a class="button primary" href="resume.docx" target="_blank">Open Resume</a>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section contact-box">
       <h2>Contact</h2>
       <p><strong>Location:</strong> Corpus Christi, Texas</p>
       <p><strong>Email:</strong> <a href="mailto:Joesephr2602@gmail.com">Joesephr2602@gmail.com</a></p>
@@ -134,7 +153,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Joeseph Rosas. All rights reserved.</p>
+    <p>&copy; 2026 Joeseph Rosas</p>
   </footer>
 
 </body>
